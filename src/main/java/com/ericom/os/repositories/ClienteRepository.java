@@ -12,8 +12,6 @@ import com.ericom.os.domain.Pessoa;
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 	
-	@Query("SELECT obj FROM Cliente obj WHERE obj.cpf=:cpf")
-	Pessoa finByCPF(@Param("cpf") String cpf);
-
+	
 
 }
