@@ -71,7 +71,7 @@ public class ClienteService {
 
 		Cliente obj = findById(id);
 		if (obj.getList().size() > 0) {
-			throw new DataIntegratyViolationException("Pessoa possui  ordens de serviço! Nâo pode ser deletado!");
+			throw new DataIntegratyViolationException("Cliente possui ordens de serviço! Nâo pode ser deletado!");
 
 		}
 
