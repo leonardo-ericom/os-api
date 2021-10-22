@@ -10,12 +10,11 @@ import org.springframework.stereotype.Service;
 
 import com.ericom.os.domain.Cliente;
 import com.ericom.os.domain.Pessoa;
+import com.ericom.os.dtos.ClienteDTO;
 import com.ericom.os.repositories.ClienteRepository;
 import com.ericom.os.repositories.PessoaRepository;
 import com.ericom.os.services.exceptions.DataIntegratyViolationException;
 import com.ericom.os.services.exceptions.ObjectNotFoundException;
-
-import br.senai.os.dtos.ClienteDTO;
 
 @Service
 public class ClienteService {

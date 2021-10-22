@@ -1,4 +1,4 @@
-package br.senai.os.dtos;
+package com.ericom.os.dtos;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

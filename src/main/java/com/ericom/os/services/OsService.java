@@ -14,10 +14,9 @@ import com.ericom.os.domain.OS;
 import com.ericom.os.domain.Tecnico;
 import com.ericom.os.domain.enuns.Prioridade;
 import com.ericom.os.domain.enuns.Status;
+import com.ericom.os.dtos.OSDTO;
 import com.ericom.os.repositories.OSRepository;
 import com.ericom.os.services.exceptions.ObjectNotFoundException;
-
-import br.senai.os.dtos.OSDTO;
 
 @Service
 public class OsService {

@@ -20,9 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.ericom.os.domain.Tecnico;
+import com.ericom.os.dtos.TecnicoDTO;
 import com.ericom.os.services.TecnicoService;
-
-import br.senai.os.dtos.TecnicoDTO;
 @CrossOrigin("*")
 @RestController
 @RequestMapping(value = "/tecnicos")

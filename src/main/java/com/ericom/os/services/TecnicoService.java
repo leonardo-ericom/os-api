@@ -10,12 +10,11 @@ import org.springframework.stereotype.Service;
 
 import com.ericom.os.domain.Pessoa;
 import com.ericom.os.domain.Tecnico;
+import com.ericom.os.dtos.TecnicoDTO;
 import com.ericom.os.repositories.PessoaRepository;
 import com.ericom.os.repositories.TecnicoRepository;
 import com.ericom.os.services.exceptions.DataIntegratyViolationException;
 import com.ericom.os.services.exceptions.ObjectNotFoundException;
-
-import br.senai.os.dtos.TecnicoDTO;
 
 @Service
 public class TecnicoService {

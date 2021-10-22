@@ -20,9 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.ericom.os.domain.Cliente;
+import com.ericom.os.dtos.ClienteDTO;
 import com.ericom.os.services.ClienteService;
-
-import br.senai.os.dtos.ClienteDTO;
 @CrossOrigin("*")
 @RestController
 @RequestMapping(value = "/clientes")

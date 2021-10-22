@@ -1,4 +1,4 @@
-package br.senai.os.dtos;
+package com.ericom.os.dtos;
 
 import java.io.Serializable;
 
@@ -6,29 +6,29 @@ import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.validator.constraints.br.CPF;
 
-import com.ericom.os.domain.Tecnico;
+import com.ericom.os.domain.Cliente;
 
-public class TecnicoDTO implements Serializable {
+public class ClienteDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Integer id;
-	
+
 	@NotEmpty(message = "O campo nome é requerido")
 	private String nome;
 
 	@CPF
 	@NotEmpty(message = "O campo CPF é requerido")
 	private String cpf;
-	
+
 	@NotEmpty(message = "O campo Telefone é requerido")
 	private String telefone;
 
-	public TecnicoDTO() {
+	public ClienteDTO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public TecnicoDTO(Tecnico obj) {
+	public ClienteDTO(Cliente obj) {
 		super();
 		this.id = obj.getId();
 		this.nome = obj.getNome();
