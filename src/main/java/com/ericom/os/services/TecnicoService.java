@@ -71,7 +71,7 @@ public class TecnicoService {
 
 		Tecnico obj = findById(id);
 		if (obj.getList().size() > 0) {
-			throw new DataIntegratyViolationException("Técnico possui  ordens de serviço! Nâo pode ser deletado!");
+			throw new DataIntegratyViolationException("Técnico possui Ordens de serviço, nâo pode ser deletado!");
 
 		}
 
