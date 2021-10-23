@@ -61,9 +61,10 @@ public class OsService {
 
 		newObj.setObservacoes(obj.getObservacoes());
 
-		newObj.setPrioridade(Prioridade.toEnum(obj.getPrioridade()));
+		newObj.setPrioridade(Prioridade.toEnum(obj.getPrioridade().getCod()));
+		
 
-		newObj.setStatus(Status.toEnum(obj.getStatus()));
+		newObj.setStatus(Status.toEnum(obj.getStatus().getCod()));
 
 		Tecnico tec = tecnicoService.findById(obj.getTecnico());
 

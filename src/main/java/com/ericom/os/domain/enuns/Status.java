@@ -2,7 +2,8 @@ package com.ericom.os.domain.enuns;
 
 public enum Status {
 
-	ABERTO(0, "BAIXA"), ANDAMENTO(1, "MEDIA"), ENCERRADO(2, "ALTA");
+
+	ABERTO(0, "ABERTO"), ANDAMENTO(1, "ANDAMENTO"), ENCERRADO(2, "ENCERRADO");
 
 	private Integer cod;
 	private String descricao;
@@ -19,20 +20,19 @@ public enum Status {
 	public String getDescricao() {
 		return descricao;
 	}
-	public  static Status toEnum(Integer cod) {
+
+	public static Status toEnum(Integer cod) {
+
 		if (cod == null) {
 			return null;
 		}
-		
+
 		for (Status x : Status.values()) {
 			if (cod.equals(x.getCod())) {
 				return x;
-			} else {
-
 			}
-			
 		}
-		throw new IllegalArgumentException("Status Inválidade!" + cod);
-		
+
+		throw new IllegalArgumentException("Status inválido!" + cod);
 	}
 }
